@@ -3,9 +3,6 @@ $( document ).ready(function() {
     var tune = new Array("E","A","G","B","A","E");
     var tuneIndex = new Array(28,33,38,43,47,52);
 
-    var majorPosition = new Array(2,2,1,2,2,2,1);
-    var minorPosition = new Array(2,1,2,2,1,2,2);
-
     var majorPosition = new Array(0,2,4,5,7,9,11);
     var minorPosition = new Array(0,2,3,5,7,8,10);
 
