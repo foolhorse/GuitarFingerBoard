@@ -3,8 +3,14 @@ $( document ).ready(function() {
     var tune = new Array("E","A","D","G","B","E");
     var tunePosition = new Array(4,9,2,7,11,4);
 
-    var majorPosition = new Array(0,2,4,5,7,9,11);
-    var minorPosition = new Array(0,2,3,5,7,8,10);
+    var naturalMajorPosition = new Array(0,2,4,5,7,9,11);
+    var naturalMinorPosition = new Array(0,2,3,5,7,8,10);
+    
+    var harmonicMajorPosition = new Array(0,2,4,5,7,8,11);
+    var harmonicMinorPosition = new Array(0,2,3,5,7,8,11);
+
+    var melodicMajorPosition = new Array(0,2,4,5,7,8,10);
+    var melodicMinorPosition = new Array(0,2,3,5,7,9,11);
 
     var twelveToneEqualTemperament = new Array("C","#C","D","#D","E","F","#F","G","#G","A","#A","B");
     
@@ -40,11 +46,19 @@ $( document ).ready(function() {
 
     function getScalePosition(scale){
         switch (scale){
-       case "major":
-          return majorPosition ;
-      case "minor":
-                return minorPosition;
-    }
+            case "natural_major":
+                return naturalMajorPosition ;
+            case "natural_minor":
+                return naturalMinorPosition;
+            case "harmonic_major":
+                return harmonicMajorPosition;
+            case "harmonic_minor":
+                return harmonicMinorPosition;
+            case "melodic_major":
+                return melodicMajorPosition;
+            case "melodic_minor":
+                return melodicMinorPosition;
+        }
     }
 
     function getKeyScaleNotes(key, scale){
