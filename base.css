@@ -3,7 +3,7 @@
 body{ }
 section{ }
 
-main {margin-top:48px;}
+main {margin-top:48px;margin-bottom: 48px;}
 
 .finger_board {margin-top: 48px;}
 .finger_board .string {display:table-row;  width:800px; }
