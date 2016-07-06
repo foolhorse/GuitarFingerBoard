@@ -22,33 +22,29 @@ $( document ).ready(function() {
     var twelveToneEqualTemperament = new Array("C","#C","D","#D","E","F","#F","G","#G","A","#A","B");
     
     $("#selcet_key").change(function(){  
-        var key = $("#selcet_key").val();  
-        var scale = $("#selcet_scale").val();  
-
-        console.log( "key:"+key );
-        changeFingerBoard(key, scale);
+       changeFingerBoardFromUI();
     });  
 
     $("#selcet_scale").change(function(){
-        var key = $("#selcet_key").val();  
-        var scale = $("#selcet_scale").val();  
-        console.log( "scale:"+scale );
-        changeFingerBoard(key, scale);
-
+       changeFingerBoardFromUI();
     });  
 
+    $(".tune").change(function(){
+       changeFingerBoardFromUI();
+    });  
 
     function getNotePosition(note){
         return twelveToneEqualTemperament.indexOf(note);
     
     }
+
     function getKeyNotes(key){
         var keyNotes = new Array();
-    var offset = getNotePosition(key);
+        var offset = getNotePosition(key);
         for(var i=0;i<twelveToneEqualTemperament.length;i=i+1 ){
-        keyNotes.push(twelveToneEqualTemperament[(i+offset)%twelveToneEqualTemperament.length ] );
-    }
-    return keyNotes;
+            keyNotes.push(twelveToneEqualTemperament[(i+offset)%twelveToneEqualTemperament.length ] );
+        }
+        return keyNotes;
     }
 
     function getScalePosition(scale){
@@ -94,7 +90,7 @@ $( document ).ready(function() {
         var keyScaleNotes = getKeyScaleNotes(key,scale);
 
         $(".string_1 .fret").each(function(index,element){
-            var note = twelveToneEqualTemperament[(tunePosition[5]+index+1)%twelveToneEqualTemperament.length];
+            var note = twelveToneEqualTemperament[(getNotePosition($("#tune_1").val())+index)%twelveToneEqualTemperament.length];
             if($.inArray( note, keyScaleNotes ) !== -1){
                 $(this).text(note);
             }else{
@@ -102,7 +98,7 @@ $( document ).ready(function() {
             }
         });
         $(".string_2 .fret").each(function(index,element){
-            var note = twelveToneEqualTemperament[(tunePosition[4]+index+1)%twelveToneEqualTemperament.length];
+            var note = twelveToneEqualTemperament[(getNotePosition($("#tune_2").val())+index)%twelveToneEqualTemperament.length];
             if($.inArray( note, keyScaleNotes ) !== -1){
                 $(this).text(note);
             }else{
@@ -110,7 +106,7 @@ $( document ).ready(function() {
             }
         });
         $(".string_3 .fret").each(function(index,element){
-            var note = twelveToneEqualTemperament[(tunePosition[3]+index+1)%twelveToneEqualTemperament.length];
+            var note = twelveToneEqualTemperament[(getNotePosition($("#tune_3").val())+index)%twelveToneEqualTemperament.length];
             if($.inArray( note, keyScaleNotes ) !== -1){
                 $(this).text(note);
             }else{
@@ -118,7 +114,7 @@ $( document ).ready(function() {
             }
         });
         $(".string_4 .fret").each(function(index,element){
-            var note = twelveToneEqualTemperament[(tunePosition[2]+index+1)%twelveToneEqualTemperament.length];
+            var note = twelveToneEqualTemperament[(getNotePosition($("#tune_4").val())+index)%twelveToneEqualTemperament.length];
             if($.inArray( note, keyScaleNotes ) !== -1){
                 $(this).text(note);
             }else{
@@ -126,7 +122,7 @@ $( document ).ready(function() {
             }
         });
         $(".string_5 .fret").each(function(index,element){
-            var note = twelveToneEqualTemperament[(tunePosition[1]+index+1)%twelveToneEqualTemperament.length];
+            var note = twelveToneEqualTemperament[(getNotePosition($("#tune_5").val())+index)%twelveToneEqualTemperament.length];
             if($.inArray( note, keyScaleNotes ) !== -1){
                 $(this).text(note);
             }else{
@@ -134,7 +130,7 @@ $( document ).ready(function() {
             }
         });
         $(".string_6 .fret").each(function(index,element){
-            var note = twelveToneEqualTemperament[(tunePosition[0]+index+1)%twelveToneEqualTemperament.length];
+            var note = twelveToneEqualTemperament[(getNotePosition($("#tune_6").val())+index)%twelveToneEqualTemperament.length];
             if($.inArray( note, keyScaleNotes ) !== -1){
                 $(this).text(note);
             }else{
@@ -144,6 +140,13 @@ $( document ).ready(function() {
 
     }  
 
+    function changeFingerBoardFromUI(){
+        var key = $("#selcet_key").val();  
+        var scale = $("#selcet_scale").val();  
+        changeFingerBoard(key, scale);
+    }
+    
+    changeFingerBoardFromUI();
 
 
 });
