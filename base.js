@@ -12,6 +12,10 @@ $( document ).ready(function() {
     var melodicMajorPosition = new Array(0,2,4,5,7,8,10);
     var melodicMinorPosition = new Array(0,2,3,5,7,9,11);
 
+    var pentatonicMajorPosition = new Array(0,2,4,7,9);
+    var pentatonicMinorPosition = new Array(0,3,5,7,10);
+
+
     var twelveToneEqualTemperament = new Array("C","#C","D","#D","E","F","#F","G","#G","A","#A","B");
     
     $("#selcet_key").change(function(){  
@@ -58,6 +62,11 @@ $( document ).ready(function() {
                 return melodicMajorPosition;
             case "melodic_minor":
                 return melodicMinorPosition;
+            case "pentatonic_major":
+                return pentatonicMajorPosition;
+            case "pentatonic_minor":
+                return pentatonicMinorPosition;
+
         }
     }
 
