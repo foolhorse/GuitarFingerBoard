@@ -15,6 +15,9 @@ $( document ).ready(function() {
     var pentatonicMajorPosition = new Array(0,2,4,7,9);
     var pentatonicMinorPosition = new Array(0,3,5,7,10);
 
+    var bluesMajorPosition = new Array(0,2,3,4,7,9);
+    var bluesMinorPosition = new Array(0,3,5,6,7,10);
+
 
     var twelveToneEqualTemperament = new Array("C","#C","D","#D","E","F","#F","G","#G","A","#A","B");
     
@@ -66,6 +69,10 @@ $( document ).ready(function() {
                 return pentatonicMajorPosition;
             case "pentatonic_minor":
                 return pentatonicMinorPosition;
+            case "blues_major":
+                return bluesMajorPosition;
+            case "blues_minor":
+                return bluesMinorPosition;
 
         }
     }
