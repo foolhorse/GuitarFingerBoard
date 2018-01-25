@@ -3,9 +3,11 @@
 body{ }
 section{ }
 
-main {margin-top:48px;}
+main {margin-top:48px;margin-bottom: 48px;}
 
 .finger_board {margin-top: 48px;}
-.finger_board .string {  width:800px;}
-.finger_board .fret {display: table-cell; text-align:center;width:48px; border: #789 1px solid;}
+.finger_board .string {display:table-row;  width:800px; }
+.finger_board .string .tune {display: table-cell; text-align:center;width:48px; height:24px; }
+.finger_board .string .fret {display: table-cell; text-align:center;width:48px; height:24px;border: #789 1px solid;}
+.finger_board .string .fret:nth-child(2) {display: table-cell; text-align:center;width:48px; height:24px;border: none;}
 .finger_board .dot .fret {display: table-cell; width:50px; border: none;}

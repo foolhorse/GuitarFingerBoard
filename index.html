@@ -17,111 +17,215 @@
 </head>
 
 <body>
-
+    <header>
+        <h1>Guitar finger board</h1>
+    </header>
     <main class="main">
         <section>
+            <span>key:</span>
             <select id="selcet_key">
-              <option value ="C">C</option>
-              <option value ="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-              <option value="G">G</option>
-              <option value="A">A</option>
-              <option value="B">B</option>
-          </select>
-
-          <select id="selcet_scale">
-              <option value ="major">major</option>
-              <option value ="minor">minor</option>
+                <option value ="C">C</option>
+                <option value ="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+            </select>
+            <br/>
+            <span>scale:</span>
+            <select id="selcet_scale">
+                <option value ="natural_major">natural major</option>
+                <option value ="natural_minor">natural minor</option>
+                <option value ="harmonic_major">harmonic major</option>
+                <option value ="harmonic_minor">harmonic minor</option>
+                <option value ="melodic_major">melodic major</option>
+                <option value ="melodic_minor">melodic minor</option>
+                <option value ="pentatonic_major">pentatonic major</option>
+                <option value ="pentatonic_minor">pentatonic minor</option>
+                <option value ="blues_major">blues major</option>
+                <option value ="blues_minor">blues minor</option>
           </select>
       </section>
       <section>
         <div class="finger_board">
             <div class="string string_1">
-             <span class="fret fret_1">E</span>
-             <span class="fret fret_2">E</span>
-             <span class="fret fret_3">E</span>
-             <span class="fret fret_4">E</span>
-             <span class="fret fret_5">E</span>
-             <span class="fret fret_6">E</span>
-             <span class="fret fret_7">E</span>
-             <span class="fret fret_8">E</span>
-             <span class="fret fret_9">E</span>
-             <span class="fret fret_10">E</span>
-             <span class="fret fret_11">E</span>
-             <span class="fret fret_12">E</span>
+            <select id="tune_1" class="tune">
+                    <option value ="C">C</option>
+                    <option value ="#">#C</option>
+                    <option value ="D">D</option>
+                    <option value ="#D">#D</option>
+                    <option value ="E" selected="selected">E</option>
+                    <option value ="F">F</option>
+                    <option value ="#F">#F</option>
+                    <option value ="G" >G</option>
+                    <option value ="#G">#G</option>
+                    <option value ="A">A</option>
+                    <option value ="#A">#A</option>
+                    <option value ="B">B</option>
+            </select>
+             <span class="fret fret_0"></span>
+             <span class="fret fret_1"></span>
+             <span class="fret fret_2"></span>
+             <span class="fret fret_3"></span>
+             <span class="fret fret_4"></span>
+             <span class="fret fret_5"></span>
+             <span class="fret fret_6"></span>
+             <span class="fret fret_7"></span>
+             <span class="fret fret_8"></span>
+             <span class="fret fret_9"></span>
+             <span class="fret fret_10"></span>
+             <span class="fret fret_11"></span>
+             <span class="fret fret_12"></span>
          </div>
          <div class="string string_2">
-             <span class="fret fret_1">E</span>
-             <span class="fret fret_2">E</span>
-             <span class="fret fret_3">E</span>
-             <span class="fret fret_4">E</span>
-             <span class="fret fret_5">E</span>
-             <span class="fret fret_6">E</span>
-             <span class="fret fret_7">E</span>
-             <span class="fret fret_8">E</span>
-             <span class="fret fret_9">E</span>
-             <span class="fret fret_10">E</span>
-             <span class="fret fret_11">E</span>
-             <span class="fret fret_12">E</span>
+             <select id="tune_2" class="tune">
+                    <option value ="C">C</option>
+                    <option value ="#">#C</option>
+                    <option value ="D">D</option>
+                    <option value ="#D">#D</option>
+                    <option value ="E" >E</option>
+                    <option value ="F">F</option>
+                    <option value ="#F">#F</option>
+                    <option value ="G" >G</option>
+                    <option value ="#G">#G</option>
+                    <option value ="A">A</option>
+                    <option value ="#A">#A</option>
+                    <option value ="B" selected="selected">B</option>
+            </select>
+            <span class="fret fret_0"></span>
+             <span class="fret fret_1"></span>
+             <span class="fret fret_2"></span>
+             <span class="fret fret_3"></span>
+             <span class="fret fret_4"></span>
+             <span class="fret fret_5"></span>
+             <span class="fret fret_6"></span>
+             <span class="fret fret_7"></span>
+             <span class="fret fret_8"></span>
+             <span class="fret fret_9"></span>
+             <span class="fret fret_10"></span>
+             <span class="fret fret_11"></span>
+             <span class="fret fret_12"></span>
          </div>
          <div class="string string_3">
-             <span class="fret fret_1">E</span>
-             <span class="fret fret_2">E</span>
-             <span class="fret fret_3">E</span>
-             <span class="fret fret_4">E</span>
-             <span class="fret fret_5">E</span>
-             <span class="fret fret_6">E</span>
-             <span class="fret fret_7">E</span>
-             <span class="fret fret_8">E</span>
-             <span class="fret fret_9">E</span>
-             <span class="fret fret_10">E</span>
-             <span class="fret fret_11">E</span>
-             <span class="fret fret_12">E</span>
+             <select id="tune_3" class="tune">
+                    <option value ="C">C</option>
+                    <option value ="#">#C</option>
+                    <option value ="D">D</option>
+                    <option value ="#D">#D</option>
+                    <option value ="E">E</option>
+                    <option value ="F">F</option>
+                    <option value ="#F">#F</option>
+                    <option value ="G" selected="selected">G</option>
+                    <option value ="#G">#G</option>
+                    <option value ="A">A</option>
+                    <option value ="#A">#A</option>
+                    <option value ="B">B</option>
+            </select>
+             <span class="fret fret_0"></span>
+             <span class="fret fret_1"></span>
+             <span class="fret fret_2"></span>
+             <span class="fret fret_3"></span>
+             <span class="fret fret_4"></span>
+             <span class="fret fret_5"></span>
+             <span class="fret fret_6"></span>
+             <span class="fret fret_7"></span>
+             <span class="fret fret_8"></span>
+             <span class="fret fret_9"></span>
+             <span class="fret fret_10"></span>
+             <span class="fret fret_11"></span>
+             <span class="fret fret_12"></span>
          </div>
          <div class="string string_4">
-             <span class="fret fret_1">E</span>
-             <span class="fret fret_2">E</span>
-             <span class="fret fret_3">E</span>
-             <span class="fret fret_4">E</span>
-             <span class="fret fret_5">E</span>
-             <span class="fret fret_6">E</span>
-             <span class="fret fret_7">E</span>
-             <span class="fret fret_8">E</span>
-             <span class="fret fret_9">E</span>
-             <span class="fret fret_10">E</span>
-             <span class="fret fret_11">E</span>
-             <span class="fret fret_12">E</span>
+             <select id="tune_4" class="tune">
+                    <option value ="C">C</option>
+                    <option value ="#">#C</option>
+                    <option value ="D" selected="selected">D</option>
+                    <option value ="#D">#D</option>
+                    <option value ="E" >E</option>
+                    <option value ="F">F</option>
+                    <option value ="#F">#F</option>
+                    <option value ="G" >G</option>
+                    <option value ="#G">#G</option>
+                    <option value ="A">A</option>
+                    <option value ="#A">#A</option>
+                    <option value ="B" >B</option>
+            </select>
+             <span class="fret fret_0"></span>
+             <span class="fret fret_1"></span>
+             <span class="fret fret_2"></span>
+             <span class="fret fret_3"></span>
+             <span class="fret fret_4"></span>
+             <span class="fret fret_5"></span>
+             <span class="fret fret_6"></span>
+             <span class="fret fret_7"></span>
+             <span class="fret fret_8"></span>
+             <span class="fret fret_9"></span>
+             <span class="fret fret_10"></span>
+             <span class="fret fret_11"></span>
+             <span class="fret fret_12"></span>
          </div>
          <div class="string string_5">
-             <span class="fret fret_1">E</span>
-             <span class="fret fret_2">E</span>
-             <span class="fret fret_3">E</span>
-             <span class="fret fret_4">E</span>
-             <span class="fret fret_5">E</span>
-             <span class="fret fret_6">E</span>
-             <span class="fret fret_7">E</span>
-             <span class="fret fret_8">E</span>
-             <span class="fret fret_9">E</span>
-             <span class="fret fret_10">E</span>
-             <span class="fret fret_11">E</span>
-             <span class="fret fret_12">E</span>
+             <select id="tune_5" class="tune">
+                    <option value ="C">C</option>
+                    <option value ="#">#C</option>
+                    <option value ="D" >D</option>
+                    <option value ="#D">#D</option>
+                    <option value ="E" >E</option>
+                    <option value ="F">F</option>
+                    <option value ="#F">#F</option>
+                    <option value ="G" >G</option>
+                    <option value ="#G">#G</option>
+                    <option value ="A"selected="selected">A</option>
+                    <option value ="#A">#A</option>
+                    <option value ="B" >B</option>
+            </select>
+             <span class="fret fret_0"></span>
+             <span class="fret fret_1"></span>
+             <span class="fret fret_2"></span>
+             <span class="fret fret_3"></span>
+             <span class="fret fret_4"></span>
+             <span class="fret fret_5"></span>
+             <span class="fret fret_6"></span>
+             <span class="fret fret_7"></span>
+             <span class="fret fret_8"></span>
+             <span class="fret fret_9"></span>
+             <span class="fret fret_10"></span>
+             <span class="fret fret_11"></span>
+             <span class="fret fret_12"></span>
          </div>
          <div class="string string_6">
-             <span class="fret fret_1">E</span>
-             <span class="fret fret_2">E</span>
-             <span class="fret fret_3">E</span>
-             <span class="fret fret_4">E</span>
-             <span class="fret fret_5">E</span>
-             <span class="fret fret_6">E</span>
-             <span class="fret fret_7">E</span>
-             <span class="fret fret_8">E</span>
-             <span class="fret fret_9">E</span>
-             <span class="fret fret_10">E</span>
-             <span class="fret fret_11">E</span>
-             <span class="fret fret_12">E</span>
+             <select id="tune_6" class="tune">
+                    <option value ="C">C</option>
+                    <option value ="#">#C</option>
+                    <option value ="D" >D</option>
+                    <option value ="#D">#D</option>
+                    <option value ="E" selected="selected">E</option>
+                    <option value ="F">F</option>
+                    <option value ="#F">#F</option>
+                    <option value ="G" >G</option>
+                    <option value ="#G">#G</option>
+                    <option value ="A">A</option>
+                    <option value ="#A">#A</option>
+                    <option value ="B" >B</option>
+            </select>
+             <span class="fret fret_0"></span>
+             <span class="fret fret_1"></span>
+             <span class="fret fret_2"></span>
+             <span class="fret fret_3"></span>
+             <span class="fret fret_4"></span>
+             <span class="fret fret_5"></span>
+             <span class="fret fret_6"></span>
+             <span class="fret fret_7"></span>
+             <span class="fret fret_8"></span>
+             <span class="fret fret_9"></span>
+             <span class="fret fret_10"></span>
+             <span class="fret fret_11"></span>
+             <span class="fret fret_12"></span>
          </div>
          <div class="dot">
+             <span class="fret  "></span>
+             <span class="fret  "></span>
              <span class="fret  "></span>
              <span class="fret  "></span>
              <span class="fret  ">・</span>
@@ -136,12 +240,12 @@
              <span class="fret  ">・</span>
          </div>
      </div>
-
-
-
  </section>    
-
-
 </main>
+    <footer>
+        <span><a href="http://www.foolhorse.com" target="_blank">©</a></span>
+    </footer>
+<a href="https://github.com/foolhorse/GuitarFingerBoard" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
 </body>
 </html>
